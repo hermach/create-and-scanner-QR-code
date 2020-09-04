@@ -1,0 +1,21 @@
+<p>creat-qrcode works!</p>
+
+<label>
+    or type to change: <input [(ngModel)]="qrdata" placeholder="name" />
+</label>
+
+  
+
+         <button *ngIf='!inputshow' id="1" (click)="inputshow = !inputshow"> valid  </button>
+         <div *ngIf='inputshow' id='1'>
+            <button *ngIf='inputshow' id="1" (click)="inputshow = !inputshow"> retour  </button>
+
+            <qrcode
+            [errorCorrectionLevel]="'M'"
+            [qrdata]="qrdata"
+            [width]="256"
+         ></qrcode>
+        </div>
+
+  
+  

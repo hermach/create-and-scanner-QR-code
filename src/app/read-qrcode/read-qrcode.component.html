@@ -1,0 +1,22 @@
+<p>read-qrcode works!</p>
+<div class="ex1">
+        <qr-scanner
+          [debug]="false"
+          [canvasWidth]="1080"
+          [canvasHeight]="720"
+          [stopAfterScan]="false"
+          [updateTime]="500"> 
+        </qr-scanner>    
+      </div>
+
+      <div>Data: {{ data }}</div> 
+
+      <style>
+      div.ex1 {
+        width:500px;
+        margin: auto;
+        border: 3px solid #73AD21;
+      }
+      
+      </style>
+      
